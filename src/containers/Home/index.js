@@ -11,6 +11,7 @@ import Section from 'hoc/Section';
 // import SectionAlternate from 'hoc/SectionAlternate';
 import Hero from './Hero';
 import TokenService from './TokenService';
+import Board from './Board';
 // import Partners from './Partners';
 // import Customization from './Customization';
 // import Support from './Support';
@@ -59,6 +60,9 @@ const Home = () => {
             <TokenService />
           </Grid>
         </Grid>
+      </Section>
+      <Section>
+        <Board />
       </Section>
       {/* <GetToken /> */}
       {/* <Section>
