@@ -33,7 +33,7 @@ const useStyles = makeStyles(theme => ({
   mainPanel: {
     backgroundColor: theme.palette.background.main,
     width: '100%',
-    minHeight: `calc(100vh - ${theme.custom.layout.topAppBarHeight + theme.custom.layout.footerHeight}px)`
+    minHeight: `calc(100vh - ${theme.custom.layout.topAppBarHeight }px)`
   }
 }));
 

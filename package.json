@@ -26,10 +26,15 @@
     "react": "^17.0.2",
     "react-avatar": "^3.10.0",
     "react-dom": "^17.0.2",
+    "react-lazy-load-image-component": "^1.5.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-toastify": "^7.0.4",
+    "react-tradingview-widget": "^1.3.2",
     "typeface-roboto": "^1.1.13",
-    "web-vitals": "^1.1.1"
+    "web-vitals": "^1.1.1",
+    "react-query": "^2.26.2",
+    "axios": "^0.21.1"
   },
   "scripts": {
     "start": "react-scripts start",

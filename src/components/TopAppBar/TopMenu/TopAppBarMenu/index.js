@@ -12,7 +12,8 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'row',
     width: 'fit-content',
     minHeight: '100%',
-    padding: 0
+    padding: 0,
+    marginLeft : theme.spacing(2.5)
   }
 }));
 

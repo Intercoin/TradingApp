@@ -17,7 +17,7 @@ import { AppContext } from 'contexts';
 import { PAGES } from 'utils/links/pages';
 // import { TOP_BAR_MENUS } from 'constants/top-menu-items';
 import WalletModal from 'components/WalletModal';
-import BoneLoading from 'components/BoneLoading'
+import TradingLoading from 'components/TradingLoading'
 import Notifications from 'components/Notifications';
 // import { formatEther } from '@ethersproject/units'
 // import { isEmpty } from 'utils/utility';
@@ -116,7 +116,7 @@ const App = ({ location, history }) => {
           maxSnack={3}>
           <CssBaseline />
           <Notifications notifications={''} notificationType={'success'} />
-          <Suspense fallback={<BoneLoading wholeOverlay />}>
+          <Suspense fallback={<TradingLoading wholeOverlay />}>
             <Layout layout={layout} account={account}>
               {
                 isWalletDialog &&

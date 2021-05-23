@@ -6,7 +6,8 @@ import Hidden from '@material-ui/core/Hidden';
 import { AppContext } from 'contexts';
 import TopAppBarLeft from './TopAppBarLeft';
 import TopAppBarRight from './TopAppBarRight';
-
+import TopAppBarMenu from './TopAppBarMenu';
+import { TOP_BAR_MENUS } from 'constants/top-menu-items';
 import { isEmpty } from 'utils/utility';
 
 const useStyles = makeStyles(theme => ({
@@ -26,8 +27,9 @@ const DesktopMenu = () => {
 
   return (
     <>
-      <TopAppBarLeft setOpen={setOpen} />
       <div className={classes.LogoContainer}>
+      <TopAppBarLeft setOpen={setOpen} />
+        <TopAppBarMenu menuItems={TOP_BAR_MENUS} />
       </div>
       <TopAppBarRight />
     </>

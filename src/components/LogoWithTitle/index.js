@@ -48,7 +48,7 @@ const LogoWithTitle = ({ setOpen, history, logoWidth, logoHeight, titleVariant, 
       <CircleButton style={{ display: 'flex', backgroundColor: '#292C40' }} onClick={onClickHander} icon={<Logo className={classes.logo} width={logoWidth} height={logoHeight} />} />
       <Hidden mdDown implementation='css' className={classes.height}>
         <Typography color='textPrimary' variant={titleVariant}>
-          Trading
+          Intercoin Trading
       </Typography>
       </Hidden>
     </div>

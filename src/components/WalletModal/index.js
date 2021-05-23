@@ -205,7 +205,7 @@ const WalletModal = ({ open, onClose, headerTitle, activatingConnector, setActiv
                   deactivate()
                 }}
               >
-                Deactivate
+                Disconnect
               </ContainedButton>
             )}
           </div>
