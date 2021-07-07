@@ -166,7 +166,7 @@ const TokenService = () => {
     const getStepButtonName = (step) => {
         switch (step) {
             case 0:
-                return `Connect My Wallet`;
+                return `Connect Wallet`;
             case 1:
                 return 'Buy ITR Tokens';
             case 2:

@@ -7,18 +7,19 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import ButtonLink from 'components/UI/Buttons/ButtonLink';
 
 const useStyles = makeStyles(theme => ({
-  root: {
+  root: props => ({
     textTransform: 'none',
+    width: '100%',
     // TODO: handle color='error'
-    // border: `1px solid ${props.color ? theme.palette[props.color].main : theme.palette.primary.main}`
-  },
+    border: `1px solid ${props.color ? props.color : theme.palette.primary.main}`
+  }),
   loadingSpin: {
     position: 'absolute'
   }
 }));
 
 const OutlinedButton = ({ className, color, variant, href, children, loading, disable, ...rest }) => {
-  const classes = useStyles();
+  const classes = useStyles({ color });
 
   return (
     <Button

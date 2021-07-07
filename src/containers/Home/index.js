@@ -8,6 +8,7 @@ import { Grid, Typography } from '@material-ui/core';
 import 'aos/dist/aos.css';
 
 import Section from 'hoc/Section';
+import AlertSetting from './AlertSetting'
 // import SectionAlternate from 'hoc/SectionAlternate';
 import Hero from './Hero';
 import TokenService from './TokenService';
@@ -44,6 +45,7 @@ const Home = () => {
     <div className={classes.root}>
 
       <Section >
+        <AlertSetting />
         <Hero />
       </Section>
       <Section>

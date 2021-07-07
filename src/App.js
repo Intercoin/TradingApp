@@ -24,6 +24,7 @@ import Notifications from 'components/Notifications';
 
 const DELAY_TIME = 100;
 const Home = loadable(() => pMinDelay(import('containers/Home'), DELAY_TIME));
+const Trade = loadable(() => pMinDelay(import('containers/Trade'), DELAY_TIME));
 
 const useStyles = makeStyles(() => ({
   primaryTextColor: {
@@ -135,10 +136,12 @@ const App = ({ location, history }) => {
                   account ?
                     <Switch>
                       <Route exact path={PAGES.HOME.url} component={Home} />
+                      <Route exact path={PAGES.TRADE.url} component={Trade} />
                     </Switch>
                     :
                     <Switch>
                       <Route exact path={PAGES.HOME.url} component={Home} />
+                      <Route exact path={PAGES.TRADE.url} component={Trade} />
                     </Switch>
                 )} />
               </Switch>
